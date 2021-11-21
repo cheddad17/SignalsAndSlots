@@ -287,6 +287,7 @@ Our calculator is quite basic, you could enhance his capabilities by:
 
 - *In order to display operations on screen , we thought of creating a label `disp2` :*
   ` QLabel *disp2; // Where to display the opperations`  
+   <img  display="inline" margin="auto" src="img/Calculator2.PNG" width="300" />
 
 - *And we will be creating a slot `void displayLabel()` that will be connected to digits and operations so that every button inner text will be written on this label :*
 
@@ -383,38 +384,40 @@ _The calculator that we've made so far is pretty basic, not efficient there are 
   > These buttons are disabled until the radio button is checked, so we added a slot `sientificOn()` that has the following implementation :  
 
 
-<p float="left" margin="auto">
-  <img  display="inline" src="img/calculoff.PNG" width="300" />
-  <img  display="inline" src="img/calculon.PNG" width="300" /> 
-</p> 
-  
-	 ```cpp
-	   void Calculator::scientificOn(){
-	    if(expr->isChecked()){
-	            for(int i=0; i < 9; i++){
-	                exprOperations[i]->setEnabled(true);
-	        }
-	            ans->setEnabled(true);
-	    }
-	   else{
-	                for(int i=0; i < 9; i++){
-	                    exprOperations[i]->setEnabled(false);
-	            }
-	                ans->setEnabled(false);
-							               
+	<p float="left" margin="auto">
+	  <img  display="inline" src="img/calculoff.PNG" width="300" />
+	  <img  display="inline" src="img/calculon.PNG" width="300" /> 
+	</p>   
+
+	```cpp
+		   void Calculator::scientificOn(){
+		    if(expr->isChecked()){
+			    for(int i=0; i < 9; i++){
+				exprOperations[i]->setEnabled(true);
+			}
+			    ans->setEnabled(true);
 		    }
-		}
-	```
+		   else{
+				for(int i=0; i < 9; i++){
+				    exprOperations[i]->setEnabled(false);
+			    }
+				ans->setEnabled(false);
+
+			    }
+			}
+	```  
+	
 	> *As we said this function only enables a set of buttons.*
 	
-	* By the way `ans` button returns the result of the previous operation :
+	* By the way `ans` button returns the result of the previous operation :  
+	
 		 ```cpp
 			void Calculator::displayPrevious(){
 		    labelvalue+=QString::number(previous);
 		    disp2->setText(labelvalue);
 		}
-		```
-		> We will be assigning a result previous in our evaluation function.
+		```  	
+	> We will be assigning a result to previous in our evaluation function.
 
 - **And now, we create a feature that evaluates and displays the result of the expression written in the `displayLabel`:**
 
@@ -451,6 +454,7 @@ _The calculator that we've made so far is pretty basic, not efficient there are 
 	        }
 	    }
   ```
+   <img  display="inline" margin="auto" src="img/expr.PNG" width="600" />
 	 > we only added a condition `if(!expr->isChecked())` the process would be normal `else` we will only display the result of our evaluation function.
  
  **TADAAAA!** , now we can add as many functions as we want we just need to create the buttons and boom the math is done.
