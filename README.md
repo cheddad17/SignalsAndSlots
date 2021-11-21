@@ -383,10 +383,9 @@ _The calculator that we've made so far is pretty basic, not efficient there are 
   > These buttons are disabled until the radio button is checked, so we added a slot `sientificOn()` that has the following implementation :  
 
 
-<p float="none" display="inline" margin="auto">
-  <img src="img/calculoff.PNG" width="300" />
-	<p><--></p>
-  <img src="img/calculon.PNG" width="300" /> 
+<p float="left" margin="auto">
+  <img  display="inline" src="img/calculoff.PNG" width="300" />
+  <img  display="inline" src="img/calculon.PNG" width="300" /> 
 </p> 
   
 	 ```cpp
