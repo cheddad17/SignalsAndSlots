@@ -384,8 +384,9 @@ _The calculator that we've made so far is pretty basic, not efficient there are 
 
 
 <p float="none">
-  <img src="img/calculoff.PNG" width="600" />
-  <img src="img/calculon.PNG" width="600" /> 
+  <img src="img/calculoff.PNG" width="300" />
+	<p><--></p>
+  <img src="img/calculon.PNG" width="300" /> 
 </p> 
   
 	 ```cpp
