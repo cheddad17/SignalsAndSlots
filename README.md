@@ -283,7 +283,7 @@ void  Calculator::showresult(){
 
 Our calculator is quite basic, you could enhance his capabilities by:
 
-### Adding a screen where the operations performed are displayed[](#Operation-history)
+## Adding a screen where the operations performed are displayed[](#Operation-history)
 
 - *In order to display operations on screen , we thought of creating a label `disp2` :*
   ` QLabel *disp2; // Where to display the opperations`  
