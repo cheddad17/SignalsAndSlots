@@ -285,9 +285,13 @@ Our calculator is quite basic, you could enhance his capabilities by:
 
 ## Adding a screen where the operations performed are displayed[](#Operation-history)
 
-- *In order to display operations on screen , we thought of creating a label `disp2` :*
-  ` QLabel *disp2; // Where to display the opperations`  
-   <img  display="inline" margin="auto" src="img/Calculator2.PNG" width="300" />
+- *In order to display operations on screen , we thought of creating a label `disp2` :*  
+- 
+  ` QLabel *disp2; // Where to display the opperations`    
+  
+   
+   <img  display="inline" margin="auto" src="img/Calculator2.PNG" width="300" />  
+   
 
 - *And we will be creating a slot `void displayLabel()` that will be connected to digits and operations so that every button inner text will be written on this label :*
 
@@ -454,7 +458,8 @@ _The calculator that we've made so far is pretty basic, not efficient there are 
 	        }
 	    }
   ```
-   <img  display="inline" margin="auto" src="img/expr.PNG" width="600" />
+   <img  display="inline" margin="auto" src="img/expr.PNG" width="600" />  
+   
 	 > we only added a condition `if(!expr->isChecked())` the process would be normal `else` we will only display the result of our evaluation function.
  
  **TADAAAA!** , now we can add as many functions as we want we just need to create the buttons and boom the math is done.
