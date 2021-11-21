@@ -380,7 +380,13 @@ _The calculator that we've made so far is pretty basic, not efficient there are 
 
 - **Then, we should add a radio button that enables the scientific mode:**
 
-  > These buttons are disabled until the radio button is checked, so we added a slot `sientificOn()` that has the following implementation :
+  > These buttons are disabled until the radio button is checked, so we added a slot `sientificOn()` that has the following implementation :  
+
+
+<p float="none">
+  <img src="img/calculoff.PNG" width="100" />
+  <img src="img/calculon.PNG" width="100" /> 
+</p> 
   
 	 ```cpp
 	   void Calculator::scientificOn(){
