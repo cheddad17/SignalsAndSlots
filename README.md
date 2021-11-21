@@ -341,9 +341,6 @@ void Calculator::displayLabel(){
     	}
     ```
 
-
-      ```
-
 ## Scientific mode
 
 _The calculator that we've made so far is pretty basic, not efficient there are no roots no power no cosine/sine functions. So we thought of creating a mode that can use some of the primordial mathematical functions_.
